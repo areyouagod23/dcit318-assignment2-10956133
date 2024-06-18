@@ -1,11 +1,22 @@
 ﻿using System;
-namespace dcit318_assignment2_10956133
+
+public interface IMovable
 {
-	public class IMovable
-	{
-		public IMovable()
-		{
-		}
-	}
+    void Move();
 }
 
+public class Car : IMovable
+{
+    public void Move()
+    {
+        Console.WriteLine("Car is moving");
+    }
+}
+
+public class Bicycle : IMovable
+{
+    public void Move()
+    {
+        Console.WriteLine("Bicycle is moving");
+    }
+}
